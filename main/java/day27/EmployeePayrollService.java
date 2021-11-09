@@ -1,3 +1,4 @@
+package day27;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -22,6 +23,10 @@ public class EmployeePayrollService {
         System.out.println("Welcome To The Employee Payroll Service System");
     }
 
+    /**
+     * Purpose : To read the information of Employees from the console
+     * @param consoleInputReader takes the information of employees
+     */
     private void readEmployeePayrollData(Scanner consoleInputReader) {
         System.out.println("Enter Employee ID : ");
         int id = consoleInputReader.nextInt();
@@ -33,6 +38,7 @@ public class EmployeePayrollService {
         employeePayrollList.add(new EmployeePayrollData(id, name, salary));
     }
 
+    /* This method is implementing to write the Employee Payroll to the console */
     private void writeEmployeePayrollData() {
         System.out.println("\nWriting Employee Payroll Roaster to console\n" + employeePayrollList);
     }
